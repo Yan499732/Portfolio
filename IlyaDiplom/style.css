@@ -1,0 +1,125 @@
+#art-main {
+    background: #FFFFFF url(images/page.jpg) top center no-repeat scroll;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: 'Palatino Linotype', Georgia, 'Times New Roman', Times, Serif;
+    font-weight: normal;
+    font-style: normal;
+    text-align: justify;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+    overflow: hidden;
+}
+
+.art-header {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.24) 0, rgba(190, 190, 190, 0.09) 100%) no-repeat, url(../images/nav.png), linear-gradient(to bottom, #F7F7F7 0, #CCCCCC 100%) no-repeat;
+    padding: 6px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 499;
+    text-align: left;
+    margin-bottom: 120px;
+}
+
+.art-sheet {
+    background-color: rgb(245, 247, 247);
+    border-radius: 5px 5px 0 0;
+    margin: 0 auto;
+    position: relative;
+    cursor: auto;
+    width: 1010px;
+    height: 645px;
+    z-index: auto !important;
+}
+
+.art-a {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+    color: rgb(84, 84, 84);
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+}
+
+.art-sheet h2 {
+    color: #2B82CA;
+    margin: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, Serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+.art-sheet p {
+    margin: 20px;
+    font-size: 14px;
+}
+
+.d1 {
+    width: 400px;
+    height: 370px;
+    float: left;
+}
+
+.d2 {
+    margin-top: 3px;
+    width: 300px;
+    height: 450px;
+    float: left;
+}
+
+.GoForm {
+
+}
+
+.GoForm input {
+    margin: 6px;
+    border-radius: 4px;
+    border: solid 1px rgb(170, 170, 170);
+    width: 230px;
+    height: 28px;
+    line-height: 18px;
+    box-sizing: border-box;
+    text-shadow: none;
+    background: #F9FAFB;
+}
+
+.GoForm button {
+    margin: 6px;
+    margin-top: 20px;
+    color: #333333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgb(255 255 255 / 75%);
+    background-color: #e6e6e6;
+    border: 1px solid #bbbbbb;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+    border-bottom-color: #a2a2a2;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+    padding: 4px 12px;
+    line-height: 20px;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+.GoForm #SZPPK {
+    border-style: none;
+    cursor: pointer;
+}
+
+.GoForm #KSR {
+    border-style: none;
+    cursor: pointer;
+}
+
+.GoForm #SNILS {
+    border-style: none;
+    cursor: pointer;
+}

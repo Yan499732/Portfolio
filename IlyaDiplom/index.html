@@ -1,0 +1,47 @@
+<HTML>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body id="art-main">
+	<header class="art-header">
+		<a href="http://shilovo.edu22.info" class="art-a">Вернуться на главную страницу</a>
+	</header>
+	<div class="art-sheet">
+		<h2>Онлайн-заявка для приёма в школу</h2>
+		<div class="d1">
+			<p>Фамилия ученика</p>
+			<p>Имя ученика</p>
+			<p>Отчество ученика</p>
+			<p>Домашний адрес</p>
+			<p>Фамилия матери</p>
+			<p>Имя матери</p>
+			<p>Отчество матери</p>
+			<p>Фамилия отца</p>
+			<p>Имя отца</p>
+			<p>Отчество отца</p>
+			<p>Копия свидетельства о рождении</p>
+			<p>Скан заявления о приеме в первый класс</p>
+			<p>Скан СНИЛС</p>
+		</div>
+		<div class="d2">
+			<form class="GoForm" action="Go.php" method="post" enctype="multipart/form-data">
+				<input type="text" name="YF" id="YF">
+				<input type="text" name="YI" id="YI">
+				<input type="text" name="YO" id="YO">
+				<input type="text" name="DA" id="DA">
+				<input type="text" name="MF" id="MF">
+				<input type="text" name="MI" id="MI">
+				<input type="text" name="MO" id="MO">
+				<input type="text" name="OF" id="OF">
+				<input type="text" name="OI" id="OI">
+				<input type="text" name="OO" id="OO">
+				<input type="file" name="KSR" id="KSR">
+				<input type="file" name="SZPPK" id="SZPPK">
+				<input type="file" name="SNILS" id="SNILS">
+				<button type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+</body>
+</HTML>
