@@ -1,0 +1,625 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(60, 84, 153);
+}
+
+header {
+	background-color: rgb(135, 80, 156);
+	height: 97px;
+}
+
+header img {
+	padding-top: 57px;
+	padding-left: 212px;
+}
+
+header ul {
+	float: right;
+	padding-top: 70px;
+	padding-right: 178px;
+}
+
+header li {
+	display: inline;
+	padding-right: 8px;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Titillium Web', sans-serif;
+	padding: 4px 16px 4px 16px;
+}
+
+header a:hover {
+	background-color: rgb(100, 58, 121);
+	border-radius: 5px;
+}
+
+.block1 {
+	background-color: rgb(135, 80, 156);
+	min-height: 503px;
+}
+
+.block1 h1 {
+	font-family: 'Titillium WebBold', sans-serif;
+	padding-top: 146px;
+	color: white;
+	text-align: center;
+	font-size: 38px;
+	width: 900px;
+	margin: 0 auto;
+	white-space: pre;
+	padding-bottom: 56px;
+}
+
+.block1 button {
+	font-family: 'Titillium WebBold', sans-serif;
+	width: 293px;
+	height: 70px;
+	background-color: rgb(235, 125, 75);
+	color: white;
+	font-size: 16px;
+	border-radius: 4px;
+	border-style: none;
+	border-bottom: 4px solid rgb(200, 106, 64);
+	margin: 0 auto;
+	display: block;
+}
+
+.block1 button:hover {
+	background-color: rgb(225, 120, 70);
+}
+
+.block1 button:active {
+	width: 280px;
+	height: 65px;
+}
+
+.block2 {
+	background-color: rgb(23, 194, 164);
+	padding-bottom: 128px;
+}
+
+.block2 h1 {
+	font-family: 'Titillium WebBold', sans-serif;
+	padding-top: 146px;
+	color: white;
+	text-align: center;
+	font-size: 38px;
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.block2 hr {
+	width: 87px;
+	height: 4px;
+	margin: 0 auto;
+	background-color: rgb(20, 165, 140);
+	border-style: none;
+}
+
+.block2 pre {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+.block2 table {
+	padding-top: 82px;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.block2 img {
+	margin: 0 auto;
+	display:block;
+	padding-bottom: 36px;
+}
+
+.block2 h4 {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	padding-bottom: 14px;
+}
+
+.block2 td {
+	font-family: 'Titillium WebLight', sans-serif;
+	color: white;
+	text-align: center;
+	width: 10px;
+	white-space: pre;
+	line-height: 1.5;
+}
+
+.block3 {
+	background-color: rgb(231, 241, 248);
+	padding-bottom: 126px;
+}
+
+.block3 h1 {
+	font-family: 'Titillium WebBold', sans-serif;
+	padding-top: 120px;
+	color: rgb(60, 71, 97);
+	text-align: center;
+	font-size: 38px;
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.block3 hr {
+	width: 87px;
+	height: 4px;
+	margin: 0 auto;
+	background-color: rgb(200, 217, 229);
+	border-style: none;
+}
+
+.block3 pre {
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(60, 71, 97);
+	text-align: center;
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+.block3 table {
+	margin: 0 auto;
+	width: 1100px;
+	padding-top: 78px;
+}
+
+.block3 img {
+	margin: 0 auto;
+	display: block;
+}
+
+.block3 h4 {
+	padding-top: 30px;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	font-size: 24px;
+	color: rgb(60, 71, 97);
+}
+
+.block3 h6 {
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	font-size: 17px;
+	color: rgb(140, 209, 238);
+	padding-bottom: 16px;
+}
+
+.block3 td {
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(93, 103, 123);
+	text-align: center;
+	width: 10px;
+	white-space: pre;
+	line-height: 1.5;
+}
+
+.block3 a {
+	padding-top: 30px;
+	display: inline-block;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.block4 {
+	background-color: white;
+	padding-bottom: 123px;
+}
+
+.block4 h1 {
+	font-family: 'Titillium WebBold', sans-serif;
+	padding-top: 120px;
+	color: rgb(60, 71, 97);
+	text-align: center;
+	font-size: 38px;
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.block4 hr {
+	width: 87px;
+	height: 4px;
+	margin: 0 auto;
+	background-color: rgb(223, 232, 237);
+	border-style: none;
+}
+
+.block4 pre {
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(60, 71, 97);
+	text-align: center;
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+.block4 table {
+	margin: 0 auto;
+	width: 1100px;
+	padding-top: 78px;
+}
+
+.table-block1 {
+	width: 160px;
+	height: 160px;
+	background-image: url(img/table2img1.png);
+	margin: 0 auto;
+	text-align: center;
+}
+
+.table-block2 {
+	width: 160px;
+	height: 160px;
+	background-image: url(img/table2img2.png);
+	margin: 0 auto;
+}
+
+.table-block3 {
+	width: 160px;
+	height: 160px;
+	background-image: url(img/table2img3.png);
+	margin: 0 auto;
+}
+
+.table-block4 {
+	width: 160px;
+	height: 160px;
+	background-image: url(img/table2img4.png);
+	margin: 0 auto;
+}
+
+.block4 h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: normal;
+	text-align: center;
+	font-size: 54px;
+	display: inline-block;
+	padding-top: 35px;
+}
+
+.block4 h4 {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: normal;
+	text-align: center;
+	font-size: 38px;
+	display: inline-block;
+}
+
+
+.block4 h5 {
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(60, 71, 97);
+	text-align: center;
+	font-size: 24px;
+	padding-top: 24px;
+}
+
+.block5 {
+	background-color: rgb(255, 221, 153);
+	min-height: 1447px;
+}
+
+.block5 h1 {
+	font-family: 'Titillium WebBold', sans-serif;
+	padding-top: 120px;
+	color: rgb(57, 57, 57);
+	text-align: center;
+	font-size: 38px;
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.block5 hr {
+	width: 87px;
+	height: 4px;
+	margin: 0 auto;
+	background-color: rgb(229, 195, 127);
+	border-style: none;
+}
+
+.block5 pre {
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(57, 57, 57);
+	text-align: center;
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+.block5 ul {
+	display: block;
+	text-align: center;
+	padding-top: 36px;
+}
+
+.block5 li {
+	display: inline;
+	padding-right: 8px;
+}
+
+.block5 li button {
+	color: rgb(57, 57, 57);
+	background-color: rgb(235, 201, 133);
+	border: none;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	padding: 6px 24px 6px 24px;
+	border-radius: 5px;
+}
+
+.block5 li button:hover {
+	background-color: rgb(200, 180, 110);
+}
+
+.block5 li button:focus {
+	background-color: white;
+}
+
+.block5 table {
+	margin: 0 auto;
+	width: 1100px;
+	padding-top: 62px;
+	padding-bottom: 36px;
+}
+
+.block5 td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.block5 p {
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	font-size: 18px;
+	padding-top: 24px;
+	padding-bottom: 48px;
+}
+
+.block5-button {
+	font-family: 'Titillium WebBold', sans-serif;
+	width: 293px;
+	height: 70px;
+	background-color: rgb(23, 194, 164);
+	color: white;
+	font-size: 16px;
+	border-radius: 4px;
+	border-style: none;
+	border-bottom: 4px solid rgb(20, 165, 140);
+	margin: 0 auto;
+	display: block;
+}
+
+.block5-button:hover {
+	background-color: rgb(22, 175, 150);
+}
+
+.block5-button:active {
+	width: 280px;
+	height: 65px;
+}
+
+.block6 {
+	background-color: rgb(215, 70, 128);
+}
+
+.block6 h1 {
+	font-family: 'Titillium WebBold', sans-serif;
+	padding-top: 120px;
+	color: white;
+	text-align: center;
+	font-size: 38px;
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.block6 hr {
+	width: 87px;
+	height: 4px;
+	margin: 0 auto;
+	background-color: rgb(183, 60, 109);
+	border-style: none;
+}
+
+.block6 p {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+.block6 table {
+	margin: 0 auto;
+	width: 1100px;
+	padding-top: 64px;
+	padding-bottom: 36px;
+}
+
+.block6 img {
+	margin-right: 20px;
+	padding-left: 30px;
+}
+
+.block6 pre {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	font-style: italic;
+	font-size: 20px;
+	padding-bottom: 16px;
+}
+
+.block6 h3 {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	font-size: 22px;
+	margin-bottom: -8px;
+}
+
+.block6 h5 {
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(255, 221, 153);
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 128px;
+}
+
+.block7 {
+	background-color: rgb(60, 84, 153);
+	min-height: 585px;
+}
+
+.block7 h1 {
+	font-family: 'Titillium WebBold', sans-serif;
+	padding-top: 120px;
+	color: white;
+	text-align: center;
+	font-size: 38px;
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.block7 hr {
+	width: 87px;
+	height: 4px;
+	margin: 0 auto;
+	background-color: rgb(39, 58, 113);
+	border-style: none;
+}
+
+.block7 p {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 18px;
+}
+
+.block7 table {
+	margin: 0 auto;
+	padding-top: 64px;
+	padding-bottom: 55px;
+}
+
+.block7-input-name {
+	font-family: 'Myriad Pro', sans-serif;
+	color: white;
+	font-size: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 360px;
+	height: 56px;
+	background-color: rgb(39, 58, 113);
+	border: none;
+	border-radius: 5px;
+	float: left;
+}
+
+.block7-input-email {
+	font-family: 'Myriad Pro', sans-serif;
+	color: white;
+	font-size: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 360px;
+	height: 56px;
+	background-color: rgb(39, 58, 113);
+	border: none;
+	border-radius: 5px;
+	float: right;
+}
+
+.block7 input::placeholder {
+	color: white;
+}
+
+.block7 textarea {
+	font-family: 'Myriad Pro', sans-serif;
+	color: white;
+	padding: 25px;
+	font-size: 20px;
+	width: 860px;
+	max-width: 860px;
+	min-width: 860px;
+	height: 200px;
+	min-height: 70px;
+	background-color: rgb(39, 58, 113);
+	border: none;
+	border-radius: 5px;
+	margin-top: 26px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.block7 textarea::placeholder {
+	color: white;
+}
+
+.block7 button {
+	font-family: 'Titillium WebBold', sans-serif;
+	width: 293px;
+	height: 70px;
+	background-color: rgb(48, 186, 231);
+	color: white;
+	font-size: 16px;
+	border-radius: 4px;
+	border-style: none;
+	border-bottom: 4px solid rgb(41, 158, 197);
+	margin: 0 auto;
+	display: block;
+}
+
+.block7 button:hover {
+	background-color: rgb(48, 175, 215);
+}
+
+.block7 button:active {
+	width: 280px;
+	height: 65px;
+}
+
+footer {
+	height: 112px;
+	width: 100%;
+	background-color: rgb(52, 75, 142);
+	border-top: 1px solid rgb(73, 95, 160);
+	margin-top: 114px;
+}
+
+footer ul {
+	text-align: center;
+	padding-top: 44px;
+}
+
+footer li {
+	display: inline;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+footer a {
+	font-family: 'Titillium WebBold', sans-serif;
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: rgb(48, 186, 231);
+}
