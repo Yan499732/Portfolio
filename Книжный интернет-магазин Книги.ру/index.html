@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Книжный интернет-магазин «Книги.ру»</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="LoadPage()">
+	<header>
+		<h1>Книжный интернет-магазин «Книги.ру»</h1>
+	</header>
+	<section>
+		<div class="filters">
+			<p class="filters-title">Фильтры</p>
+			<p class="filters-filter">ФИО писателя:</p>
+			<p class="filters-checkbox"><input type="checkbox" id="filter1">А.С. Пушкин</p>
+			<p class="filters-checkbox"><input type="checkbox" id="filter2">Н. В. Гоголь</p>
+			<p class="filters-checkbox"><input type="checkbox" id="filter3">Л. Н. Толстой</p>
+			<p class="filters-checkbox"><input type="checkbox" id="filter4">А. П. Чехов</p>
+			<p class="filters-checkbox"><input type="checkbox" id="filter5">Джек Лондон</p>
+			<p class="filters-filter">Цена за книгу:</p>
+			<p class="filters-checkbox"><input type="checkbox" id="filter6">400 рублей</p>
+			<p class="filters-checkbox"><input type="checkbox" id="filter7">600 рублей</p>
+			<p class="filters-filter">Тип литературы:</p>
+			<p class="filters-checkbox"><input type="checkbox" id="filter8">Российская</p>
+			<p class="filters-checkbox-last"><input type="checkbox" id="filter9">Иностранная</p>
+			<button class="filters-button1" onclick="ApplyFilters()">Применить</button>
+			<button class="filters-button2" onclick="UndoFilters()">Сбросить</button>
+		</div>
+		<div class="books">
+			<div class="book" id="book1">
+				<img class="book-img" src="img/Пушкин-Избранное.jpeg">
+				<p class="book-name">Избранное</p>
+				<p class="book-author">А. С. Пушкин</p>
+				<button class="book-button">Купить: 400р</button>
+			</div>
+			<div class="book" id="book2">
+				<img class="book-img" src="img/Пушкин-Стихотворения.jpeg">
+				<p class="book-name">Стихотворения</p>
+				<p class="book-author">А. С. Пушкин</p>
+				<button class="book-button">Купить: 600р</button>
+			</div>
+			<div class="book" id="book3">
+				<img class="book-img" src="img/Пушкин-Сказки.jpeg">
+				<p class="book-name">Сказки</p>
+				<p class="book-author">А. С. Пушкин</p>
+				<button class="book-button">Купить: 400р</button>
+			</div>
+			<div class="book" id="book4">
+				<img class="book-img" src="img/Пушкин-Стихотворения-и-поэмы.jpeg">
+				<p class="book-name">Стихотворения и поэмы</p>
+				<p class="book-author">А. С. Пушкин</p>
+				<button class="book-button">Купить: 600р</button>
+			</div>
+			<div class="book" id="book5">
+				<img class="book-img" src="img/Гоголь-Ревизор.jpg">
+				<p class="book-name">Ревизор</p>
+				<p class="book-author">Н. В. Гоголь</p>
+				<button class="book-button">Купить: 400р</button>
+			</div>
+			<div class="book" id="book6">
+				<img class="book-img" src="img/Гоголь-Шинель.jpg">
+				<p class="book-name">Шинель</p>
+				<p class="book-author">Н. В. Гоголь</p>
+				<button class="book-button">Купить: 600р</button>
+			</div>
+			<div class="book" id="book7">
+				<img class="book-img" src="img/Гоголь-Мёртвые-души.jpg">
+				<p class="book-name">Мёртвые души</p>
+				<p class="book-author">Н. В. Гоголь</p>
+				<button class="book-button">Купить: 400р</button>
+			</div>
+			<div class="book" id="book8">
+				<img class="book-img" src="img/Толстой-Война-и-мир.jpg">
+				<p class="book-name">Война и мир</p>
+				<p class="book-author">Л. Н. Толстой</p>
+				<button class="book-button">Купить: 600р</button>
+			</div>
+			<div class="book" id="book9">
+				<img class="book-img" src="img/Толстой-Два-гусара.jpg">
+				<p class="book-name">Два гусара</p>
+				<p class="book-author">Л. Н. Толстой</p>
+				<button class="book-button">Купить: 400р</button>
+			</div>
+			<div class="book" id="book10">
+				<img class="book-img" src="img/Толстой-Воскресение.jpeg">
+				<p class="book-name">Воскресение</p>
+				<p class="book-author">Л. Н. Толстой</p>
+				<button class="book-button">Купить: 600р</button>
+			</div>
+			<div class="book" id="book11">
+				<img class="book-img" src="img/Чехов-Рассказы.jpeg">
+				<p class="book-name">Рассказы</p>
+				<p class="book-author">А. П. Чехов</p>
+				<button class="book-button">Купить: 400р</button>
+			</div>
+			<div class="book" id="book12">
+				<img class="book-img" src="img/Чехов-Толстый-и-тонкий.jpg">
+				<p class="book-name">Толстый и тонкий</p>
+				<p class="book-author">А. П. Чехов</p>
+				<button class="book-button">Купить: 600р</button>
+			</div>
+			<div class="book" id="book13">
+				<img class="book-img" src="img/Чехов-Вишнёвый-сад.jpg">
+				<p class="book-name">Вишнёвый сад</p>
+				<p class="book-author">А. П. Чехов</p>
+				<button class="book-button">Купить: 400р</button>
+			</div>
+			<div class="book" id="book14">
+				<img class="book-img" src="img/Лондон-Дочь-снегов.jpg">
+				<p class="book-name">Дочь снегов</p>
+				<p class="book-author">Джек Лондон</p>
+				<button class="book-button">Купить: 600р</button>
+			</div>
+			<div class="book" id="book15">
+				<img class="book-img" src="img/Лондон-Любовь-к-жизни.jpg">
+				<p class="book-name">Любовь к жизни</p>
+				<p class="book-author">Джек Лондон</p>
+				<button class="book-button">Купить: 400р</button>
+			</div>
+		</div>
+		<div class="endpage"></div>
+
+		<script type="text/javascript">
+			function LoadPage() {
+				//Книги
+				let book1 = document.getElementById('book1');
+				let book2 = document.getElementById('book2');
+				let book3 = document.getElementById('book3');
+				let book4 = document.getElementById('book4');
+				let book5 = document.getElementById('book5');
+				let book6 = document.getElementById('book6');
+				let book7 = document.getElementById('book7');
+				let book8 = document.getElementById('book8');
+				let book9 = document.getElementById('book9');
+				let book10 = document.getElementById('book10');
+				let book11 = document.getElementById('book11');
+				let book12 = document.getElementById('book12');
+				let book13 = document.getElementById('book13');
+				let book14 = document.getElementById('book14');
+				let book15 = document.getElementById('book15');
+				//Фильтры
+				let filter1 = document.getElementById('filter1');
+				let filter2 = document.getElementById('filter2');
+				let filter3 = document.getElementById('filter3');
+				let filter4 = document.getElementById('filter4');
+				let filter5 = document.getElementById('filter5');
+				let filter6 = document.getElementById('filter6');
+				let filter7 = document.getElementById('filter7');
+				let filter8 = document.getElementById('filter8');
+				let filter9 = document.getElementById('filter9');
+			}
+
+			function ApplyFilters() {
+				if (filter1.checked || filter2.checked || filter3.checked || filter4.checked || filter5.checked || filter6.checked || filter7.checked || filter8.checked || filter9.checked) {
+					book1.style.display = 'none';
+					book2.style.display = 'none';
+					book3.style.display = 'none';
+					book4.style.display = 'none';
+					book5.style.display = 'none';
+					book6.style.display = 'none';
+					book7.style.display = 'none';
+					book8.style.display = 'none';
+					book9.style.display = 'none';
+					book10.style.display = 'none';
+					book11.style.display = 'none';
+					book12.style.display = 'none';
+					book13.style.display = 'none';
+					book14.style.display = 'none';
+					book15.style.display = 'none';
+
+					if (filter1.checked) {
+						book1.style.display = 'block';
+						book2.style.display = 'block';
+						book3.style.display = 'block';
+						book4.style.display = 'block';
+					}
+
+					if (filter2.checked) {
+						book5.style.display = 'block';
+						book6.style.display = 'block';
+						book7.style.display = 'block';
+					}
+
+					if (filter3.checked) {
+						book8.style.display = 'block';
+						book9.style.display = 'block';
+						book10.style.display = 'block';
+					}
+
+					if (filter4.checked) {
+						book11.style.display = 'block';
+						book12.style.display = 'block';
+						book13.style.display = 'block';
+					}
+
+					if (filter5.checked) {
+						book14.style.display = 'block';
+						book15.style.display = 'block';
+					}
+
+					if (filter6.checked) {
+						book1.style.display = 'block';
+						book3.style.display = 'block';
+						book5.style.display = 'block';
+						book7.style.display = 'block';
+						book9.style.display = 'block';
+						book11.style.display = 'block';
+						book13.style.display = 'block';
+						book15.style.display = 'block';
+					}
+
+					if (filter7.checked) {
+						book2.style.display = 'block';
+						book4.style.display = 'block';
+						book6.style.display = 'block';
+						book8.style.display = 'block';
+						book10.style.display = 'block';
+						book12.style.display = 'block';
+						book14.style.display = 'block';
+					}
+
+					if (filter8.checked) {
+						book1.style.display = 'block';
+						book2.style.display = 'block';
+						book3.style.display = 'block';
+						book4.style.display = 'block';
+						book5.style.display = 'block';
+						book6.style.display = 'block';
+						book7.style.display = 'block';
+						book8.style.display = 'block';
+						book9.style.display = 'block';
+						book10.style.display = 'block';
+						book11.style.display = 'block';
+						book12.style.display = 'block';
+						book13.style.display = 'block';
+					}
+
+					if (filter9.checked) {
+						book14.style.display = 'block';
+						book15.style.display = 'block';
+					}
+				}
+			}
+
+			function UndoFilters() {
+				book1.style.display = 'block';
+				book2.style.display = 'block';
+				book3.style.display = 'block';
+				book4.style.display = 'block';
+				book5.style.display = 'block';
+				book6.style.display = 'block';
+				book7.style.display = 'block';
+				book8.style.display = 'block';
+				book9.style.display = 'block';
+				book10.style.display = 'block';
+				book11.style.display = 'block';
+				book12.style.display = 'block';
+				book13.style.display = 'block';
+				book14.style.display = 'block';
+				book15.style.display = 'block';
+			}
+		</script>
+
+	</section>
+</body>
+</html>

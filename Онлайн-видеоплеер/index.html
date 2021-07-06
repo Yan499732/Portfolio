@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Онлайн-видеоплеер</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Онлайн-видеоплеер</h1>
+	</header>
+	<section>
+		<div class="videoblock">
+			<label for="file" class="input-file" id="input-file">
+				Перетащите файл сюда или выберите файл на компьютере</br>
+				<input type="file" accept=".MP4, .MPEG-4, .AVI" id="file" class="input-file-none">
+			</label>
+			<p class="videoname" id="videoname">Название видео</p>
+			<video controls="controls" poster="" id="result" src="https://www.youtube.com/watch?v=xsroTxtxaIE" autoplay controls>
+				<source src="" id="source">
+			</video>
+			<div class="likes">
+				<button class="like" id="like" onclick="liking()"></button>
+				<label class="rating" id="rating">0</label>
+				<button class="dislike" id="dislike" onclick="disliking()"></button>
+				<p class="love">Мне нравится!</p><p class="not-love">Не нравится!</p>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		const pEventRace = (node, descriptors) => new Promise((resolve, reject) => {
+   			const callbacks = descriptors.map(descriptor => ({
+    			event: descriptor.event, 
+    			callback: event => {
+       				for (let callback of callbacks) {
+         				node.removeEventListener(callback.event, callback.callback, true)
+       				}
+       
+       		descriptor.resolves ? resolve(event) : reject(event);
+     		}
+   		}));
+  
+  			for (let callback of callbacks) {
+    			node.addEventListener(callback.event, callback.callback, true);
+  			}
+		});
+
+		document.querySelector("#file").addEventListener("change", async event => {
+   		const resolves = true;
+  
+   			if (event.target.files.length === 0) return;
+   			const oUrl = URL.createObjectURL(event.target.files[0]);
+   			let video = document.querySelector("#result");
+
+   			let pVideoLoaded = pEventRace(video, [
+     			{ event: "canplaythrough", resolves },
+     			{ event: "error" }
+   			]);
+   			video.src = oUrl;
+
+   			console.log(`src set`);
+  
+   			try {
+     			await pVideoLoaded;
+     			console.log(`video loaded`);
+     			URL.revokeObjectURL(oUrl);
+     			document.getElementById("videoname").innerHTML = document.getElementById("file").files[0].name;
+   			} catch (error) {
+     			console.log(`video errored with ${error.message}`);
+     			URL.revokeObjectURL(oUrl);
+   			}
+		});
+
+		let like = document.getElementById('like');
+		let dislike = document.getElementById('dislike');
+		let rating = document.getElementById('rating');
+		var likebool = new Boolean(false);
+		var dislikebool = new Boolean(false);
+
+		function liking() {
+			if (likebool == false) {
+				dislike.style.backgroundImage = "url('img/dislike.png')";
+				like.style.backgroundImage = "url('img/like-active.png')";
+				rating.innerHTML = 1;
+				rating.style.color = 'green';
+				likebool = true;
+				dislikebool = false;
+			}
+			else {
+				like.style.backgroundImage = "url('img/like.png')";
+				dislike.style.backgroundImage = "url('img/dislike.png')";
+				rating.style.color = 'black';
+				rating.innerHTML = 0;
+				likebool = false;
+			}
+		}
+
+		function disliking() {
+			if (dislikebool == false) {
+				like.style.backgroundImage = "url('img/like.png')";
+				dislike.style.backgroundImage = "url('img/dislike-active.png')";
+				rating.innerHTML = -1;
+				rating.style.color = 'red';
+				dislikebool = true;
+				likebool = false;
+			}
+			else {
+				dislike.style.backgroundImage = "url('img/dislike.png')";
+				like.style.backgroundImage = "url('img/like.png')";
+				rating.style.color = 'black';
+				rating.innerHTML = 0;
+				dislikebool = false;
+			}
+		}
+	</script>
+</body>
+</html>

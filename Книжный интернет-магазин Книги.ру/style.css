@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Philosopher';
+}
+
+body {
+	background-color: rgb(231, 241, 248);
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background-color: rgb(23, 194, 164);
+}
+
+header h1 {
+	text-align: center;
+	color: white;
+	font-size: 38px;
+	padding-top: 8px;
+}
+
+.filters {
+	width: 200px;
+	height: 465px;
+	margin-bottom: 25px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+	float: left;
+}
+
+.filters-title {
+	text-align: center;
+	font-size: 32px;
+	border-bottom: 1px solid black;
+}
+
+.filters-filter {
+	font-size: 22px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+input[type="checkbox"] {
+	margin-right: 5px;
+	width: 17px;
+	height: 17px;
+}
+
+.filters-checkbox {
+	font-size: 18px;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.filters-checkbox-last {
+	font-size: 18px;
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.filters-button1 {
+	width: 150px;
+	height: 25px;
+	font-size: 16px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: rgb(23, 194, 164);
+	cursor: pointer;
+	margin: 0 auto;
+	display: block;
+}
+
+.filters-button1:hover {
+	background-color: rgb(39, 209, 194);
+}
+
+.filters-button1:active {
+	transform: translateY(2px);
+}
+
+.filters-button2 {
+	width: 150px;
+	height: 25px;
+	font-size: 16px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: rgb(23, 194, 164);
+	cursor: pointer;
+	margin: 0 auto;
+	display: block;
+	margin-top: 10px;
+}
+
+.filters-button2:hover {
+	background-color: rgb(39, 209, 194);
+}
+
+.filters-button2:active {
+	transform: translateY(2px);
+}
+
+.books {
+	display: table;
+}
+
+@media screen and (min-width: 1440px) {
+	.books {
+		margin-top: 10px;
+		width: 1230px;
+		height: 2000px;
+		max-height: 10000px;
+		float: left;
+	}
+}
+
+.book {
+	display: table-cell;
+	float: left;
+	width: 220px;
+	height: 390px;
+	text-align: center;
+	margin-left: 15px;
+	margin-right: 10px;
+	margin-top: 10px;
+	padding-top: 10px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+
+.book-img {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.book-name {
+	font-size: 22px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.book-button {
+	width: 150px;
+	height: 25px;
+	font-size: 16px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: rgb(23, 194, 164);
+	cursor: pointer;
+	margin-top: 4px;
+}
+
+.book-button:hover {
+	background-color: rgb(39, 209, 194);
+}
+
+.book-button:active {
+	transform: translateY(2px);
+}
+
+.endpage {
+	width: 100%;
+	height: 25px;
+	float: left;
+}
